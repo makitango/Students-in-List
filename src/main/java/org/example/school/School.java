@@ -1,15 +1,25 @@
 package org.example.school;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Objects;
+import java.util.*;
 
 public class School {
     List<Student> studentsOfSchool = new ArrayList<>();
+    Map<String, Student> studentsOfSchool2;
+
 
     public School() {
-
+        studentsOfSchool2 = new HashMap<>();
     }
+
+    public void putStudent(Student student){
+        studentsOfSchool2.put(student.getMatriculationNumber(), student);
+    }
+
+    public void printAllStudentsInMap() {
+
+        System.out.println(studentsOfSchool2);
+    }
+
 
     public static void addStudent(School schoolTest, Student student) {
         schoolTest.studentsOfSchool.add(student);
