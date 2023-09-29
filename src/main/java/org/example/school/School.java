@@ -8,6 +8,10 @@ public class School {
     List<Student> studentsOfSchool = new ArrayList<>();
 
     public School() {
+
+    }
+    public static void addStudent(School schoolTest, Student student){
+schoolTest.studentsOfSchool.add(student);
     }
 
     public List<Student> getStudentsOfSchool() {
