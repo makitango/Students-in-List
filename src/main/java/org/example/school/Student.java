@@ -49,6 +49,15 @@ public class Student {
     public int hashCode() {
         return Objects.hash(firstName, lastName, matriculationNumber);
     }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", matriculationNumber='" + matriculationNumber + '\'' +
+                '}';
+    }
 }
 
 

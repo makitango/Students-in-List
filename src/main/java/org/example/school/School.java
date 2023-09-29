@@ -14,6 +14,11 @@ public class School {
 schoolTest.studentsOfSchool.add(student);
     }
 
+    public void printAllStudents(){
+
+        System.out.println(studentsOfSchool);
+    }
+
     public List<Student> getStudentsOfSchool() {
         return studentsOfSchool;
     }
