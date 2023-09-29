@@ -24,6 +24,7 @@ public class Main {
         School.addStudent(hogwarts, student2);
         School.addStudent(hogwarts, student3);
         hogwarts.printAllStudents();
+        hogwarts.findStudent("FCKGW-RHQQ2-YXRKT-8TG6W-2B7Q8");
 
         for (Student s : students) {
             System.out.println(s.getFirstName() + s.getLastName() + s.getMatriculationNumber());

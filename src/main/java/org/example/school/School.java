@@ -10,13 +10,22 @@ public class School {
     public School() {
 
     }
-    public static void addStudent(School schoolTest, Student student){
-schoolTest.studentsOfSchool.add(student);
+
+    public static void addStudent(School schoolTest, Student student) {
+        schoolTest.studentsOfSchool.add(student);
     }
 
-    public void printAllStudents(){
+    public void printAllStudents() {
 
         System.out.println(studentsOfSchool);
+    }
+
+    public Student findStudent(String id) {
+        int index = this.studentsOfSchool.indexOf(id);
+        if (index >= 0) {
+            return studentsOfSchool.get(index);
+        }
+        return null;
     }
 
     public List<Student> getStudentsOfSchool() {
